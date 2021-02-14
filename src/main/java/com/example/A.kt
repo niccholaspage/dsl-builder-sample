@@ -14,7 +14,10 @@ fun main() {
             Random.nextDouble() * 1000
         }
         students {
-            
+            person {
+                firstName = "Pizza"
+                lastName = "Hut"
+            }
         }
     }
 }
