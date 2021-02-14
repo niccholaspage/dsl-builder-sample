@@ -1,4 +1,5 @@
-import com.example.AClassBuilder
+package com.example
+
 import kotlin.random.Random
 
 fun main() {
