@@ -13,6 +13,9 @@ fun main() {
         rollingCooldown {
             Random.nextDouble() * 1000
         }
+        students {
+            
+        }
     }
 }
 

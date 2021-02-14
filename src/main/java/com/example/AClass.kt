@@ -10,7 +10,8 @@ class AClass(
     val cooldownDynamicValue: DynamicValue<Double>,
     val coolGrades: List<Double>,
     val chickenString: String,
-    var changingString: String?
+    var changingString: String?,
+    val students: List<Person>
 ) {
     val pizzaHut: Double = 5.0
 }
