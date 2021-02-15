@@ -4,7 +4,13 @@ import com.nicholasnassar.dslbuilder.annotation.GenerateBuilder
 import java.io.OutputStream
 
 @GenerateBuilder
+class B<T>(
+    private val coolGenericThing: Function<Double>
+)
+
+@GenerateBuilder
 class AClass(
+    private val chickens: List<List<*>>,
     private val outputStream: OutputStream?,
     val b: String,
     val cooldownDynamicValue: DynamicValue<Double>,
