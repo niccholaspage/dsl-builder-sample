@@ -5,6 +5,12 @@ import kotlin.random.Random
 fun main() {
     val builder = AClassBuilder()
 
+    val bBuilder = BBuilder<String>()
+
+    bBuilder.apply {
+        coolGenericThing = { 5.0 }
+    }
+
     builder.apply {
         cooldown = 5.0
         cooldown {

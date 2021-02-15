@@ -5,12 +5,13 @@ import java.io.OutputStream
 
 @GenerateBuilder
 class B<T>(
-    private val coolGenericThing: Function<Double>
+    private val coolGenericThing: Function<Double>,
+    private val a: List<AClass>
 )
 
 @GenerateBuilder
 class AClass(
-    private val chickens: List<List<*>>,
+    private val chickens: List<List<String>>,
     private val outputStream: OutputStream?,
     val b: String,
     val cooldownDynamicValue: DynamicValue<Double>,
