@@ -4,7 +4,7 @@ import com.nicholasnassar.dslbuilder.annotation.GenerateBuilder
 import java.io.OutputStream
 
 @GenerateBuilder
-class B<T>(
+class B<T : Number>(
     private val coolGenericThing: Function<Double>,
     private val a: List<AClass>
 )

@@ -4,8 +4,7 @@ import kotlin.random.Random
 
 fun main() {
     val builder = AClassBuilder()
-
-    val bBuilder = BBuilder<String>()
+    val bBuilder = BBuilder<Number>()
 
     bBuilder.apply {
         coolGenericThing = { 5.0 }
