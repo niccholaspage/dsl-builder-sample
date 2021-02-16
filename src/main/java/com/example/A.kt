@@ -1,6 +1,11 @@
 package com.example
 
+import com.nicholasnassar.dslbuilder.annotation.GenerateBuilder
+import com.nicholasnassar.dslbuilder.annotation.NullValue
 import kotlin.random.Random
+
+@GenerateBuilder
+class C(@NullValue("12.0") val funNumber: Double)
 
 fun main() {
     val builder = AClassBuilder()
