@@ -5,7 +5,7 @@ import com.nicholasnassar.dslbuilder.annotation.NullValue
 import kotlin.random.Random
 
 @GenerateBuilder
-class C(@NullValue("12.0") val funNumber: Double)
+class C(@NullValue("12.0") val funNumber: Double, @NullValue("5") val intDynamicValue: DynamicValue<Int>)
 
 fun main() {
     val builder = AClassBuilder()
