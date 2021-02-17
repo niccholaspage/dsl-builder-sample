@@ -2,23 +2,27 @@ package com.example
 
 import com.nicholasnassar.dslbuilder.annotation.GenerateBuilder
 
-interface Modifier
+interface Target
+
+interface Modifier<T: Target>
 
 @GenerateBuilder
-class SpawnModifier(val name: String) : Modifier
-@GenerateBuilder
-class PizzaModifier(val pizzaSlices: Int) : Modifier
+class SpawnModifier(val name: String) : Modifier<Target>
 
 @GenerateBuilder
-class CoolClass(val modifiers: List<Modifier>)
+class PizzaModifier(val pizzaSlices: Int) : Modifier<Target>
+
+@GenerateBuilder
+class CoolClass(val modifiers: List<Modifier<Target>>)
 
 fun main() {
     val builder = CoolClassBuilder()
 
     builder.apply {
         modifiers {
+
             spawnModifier {
-                name = "AASDF"
+                name = "???"
             }
             pizzaModifier {
                 pizzaSlices = 5
