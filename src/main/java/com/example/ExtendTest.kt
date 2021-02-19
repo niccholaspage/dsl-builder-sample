@@ -1,10 +1,9 @@
 package com.example
 
+import com.example.modifier.Modifier
 import com.nicholasnassar.dslbuilder.annotation.GenerateBuilder
+import com.example.target.Target
 
-interface Target
-
-interface Modifier<T: Target>
 
 @GenerateBuilder
 class SpawnModifier(val name: String) : Modifier<Target>
