@@ -1,5 +1,7 @@
 package com.example
 
+import com.example.skill.SkillBuilder
+import com.example.target.group.CasterTargetGroupSelection
 import com.nicholasnassar.dslbuilder.annotation.GenerateBuilder
 import com.nicholasnassar.dslbuilder.annotation.NullValue
 import kotlin.random.Random
@@ -10,6 +12,18 @@ class C(@NullValue("12.0") val funNumber: Double, @NullValue("5") val intDynamic
 fun main() {
     val builder = AClassBuilder()
     val bBuilder = BBuilder<Number>()
+
+    val skillBuilder = SkillBuilder()
+
+    skillBuilder.apply {
+        targetedEffects {
+            targetedEffect {
+                targetGroups {
+                    targetGroup(CasterTargetGroupSelection())
+                }
+            }
+        }
+    }
 
     bBuilder.apply {
         coolGenericThing = { 5.0 }
