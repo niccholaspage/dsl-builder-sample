@@ -1,4 +1,4 @@
-package com.example
+package com.example.effect.status
 
 import com.example.effect.Effect
 import com.nicholasnassar.dslbuilder.annotation.GenerateBuilder
