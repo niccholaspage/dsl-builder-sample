@@ -5,4 +5,4 @@ import com.example.target.group.TargetGroup
 import com.nicholasnassar.dslbuilder.annotation.GenerateBuilder
 
 @GenerateBuilder
-class TargetedEffect<T : Target>(private val targetGroups: List<TargetGroup<T>>)
+open class TargetedEffect<T : Target>(private val targetGroups: List<TargetGroup<T>>)

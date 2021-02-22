@@ -17,9 +17,12 @@ fun main() {
 
     skillBuilder.apply {
         targetedEffects {
+            livingEntityTargetedEffect {
+
+            }
             targetedEffect {
                 targetGroups {
-                    targetGroup(CasterTargetGroupSelection())
+
                 }
             }
         }
