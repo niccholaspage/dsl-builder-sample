@@ -2,8 +2,8 @@ package com.example
 
 import com.example.skill.SkillBuilder
 import com.example.target.group.CasterTargetGroupSelection
-import com.nicholasnassar.dslbuilder.annotation.GenerateBuilder
-import com.nicholasnassar.dslbuilder.annotation.NullValue
+import com.nicholasnassar.dslbuilder.api.annotation.GenerateBuilder
+import com.nicholasnassar.dslbuilder.api.annotation.NullValue
 import kotlin.random.Random
 
 @GenerateBuilder

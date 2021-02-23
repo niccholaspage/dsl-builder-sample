@@ -3,7 +3,7 @@ package com.example
 import com.example.modifier.Modifier
 import com.example.target.LivingEntityTarget
 import com.example.target.Target
-import com.nicholasnassar.dslbuilder.annotation.GenerateBuilder
+import com.nicholasnassar.dslbuilder.api.annotation.GenerateBuilder
 
 
 @GenerateBuilder
@@ -29,10 +29,6 @@ fun main() {
             }
             pizzaModifier {
                 pizzaSlices = 5
-            }
-
-            uhohModifier {
-
             }
         }
     }

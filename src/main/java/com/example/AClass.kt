@@ -1,6 +1,6 @@
 package com.example
 
-import com.nicholasnassar.dslbuilder.annotation.GenerateBuilder
+import com.nicholasnassar.dslbuilder.api.annotation.GenerateBuilder
 import java.io.OutputStream
 
 @GenerateBuilder

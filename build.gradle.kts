@@ -21,7 +21,7 @@ sourceSets {
 
 dependencies {
     implementation(kotlin("stdlib"))
-    implementation("com.nicholasnassar.dslbuilder:dsl-builder-ksp:0.0.1-SNAPSHOT")
+    implementation("com.nicholasnassar.dslbuilder:dsl-builder-api:0.0.1-SNAPSHOT")
     ksp("com.nicholasnassar.dslbuilder:dsl-builder-ksp:0.0.1-SNAPSHOT")
 }
 
