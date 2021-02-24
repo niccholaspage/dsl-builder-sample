@@ -3,4 +3,4 @@ package com.example
 import com.nicholasnassar.dslbuilder.api.annotation.GenerateBuilder
 
 @GenerateBuilder
-class Person(val firstName: String, val lastName: String, val pet: Pet)
+class Pet(val name: String, val breed: String)
