@@ -43,6 +43,7 @@ fun main() {
             person {
                 firstName = "Pizza"
                 lastName = "Hut"
+                pet {  }
             }
         }
     }
