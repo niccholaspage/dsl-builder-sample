@@ -21,7 +21,9 @@ fun main() {
             }
             targetedEffect {
                 targetGroups {
-
+                    targetGroup {
+                        casterTargetGroupSelection {}
+                    }
                 }
             }
         }
