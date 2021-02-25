@@ -5,8 +5,16 @@ import com.nicholasnassar.dslbuilder.api.annotation.GenerateBuilder
 import com.nicholasnassar.dslbuilder.api.annotation.NullValue
 import kotlin.random.Random
 
+sealed class Mode {
+    @GenerateBuilder
+    class Single : Mode()
+
+    @GenerateBuilder
+    class Multi : Mode()
+}
+
 @GenerateBuilder
-class C(@NullValue("12.0") val funNumber: Double, @NullValue("5") val intDynamicValue: DynamicValue<Int>)
+class C(val mode: Mode, @NullValue("5") val intDynamicValue: DynamicValue<Int>)
 
 fun main() {
     val builder = AClassBuilder()
@@ -42,7 +50,7 @@ fun main() {
             person {
                 firstName = "Pizza"
                 lastName = "Hut"
-                pet {  }
+                pet { }
             }
         }
     }
