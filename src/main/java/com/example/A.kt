@@ -10,13 +10,20 @@ sealed class Mode {
     class Single : Mode()
 
     @GenerateBuilder
-    class Multi : Mode()
+    open class Multi : Mode()
+
+    @GenerateBuilder
+    class ExtendingMulti : Multi()
 }
 
 @GenerateBuilder
 class C(val mode: Mode, @NullValue("5") val intDynamicValue: DynamicValue<Int>)
 
 fun main() {
+    CBuilder().apply {
+
+    }
+
     val builder = AClassBuilder()
     val bBuilder = BBuilder<Number>()
 
