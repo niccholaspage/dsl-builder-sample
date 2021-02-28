@@ -1,6 +1,9 @@
 package com.example
 
+import com.example.modifier.Modifier
 import com.example.skill.SkillBuilder
+import com.example.target.LivingEntityTarget
+import com.example.target.Target
 import com.nicholasnassar.dslbuilder.api.annotation.GenerateBuilder
 import com.nicholasnassar.dslbuilder.api.annotation.NullValue
 import kotlin.random.Random
@@ -19,9 +22,15 @@ sealed class Mode {
 @GenerateBuilder
 class C(val mode: Mode, @NullValue("5") val intDynamicValue: DynamicValue<Int>)
 
-fun main() {
-    CBuilder().apply {
 
+@GenerateBuilder
+class StatusEffect<T : Target>(val modifiers: List<Modifier<T>>)
+
+fun main() {
+    StatusEffectBuilder<LivingEntityTarget>().apply {
+        modifiers {
+            
+        }
     }
 
     val builder = AClassBuilder()
